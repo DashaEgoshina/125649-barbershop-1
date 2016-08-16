@@ -1,0 +1,1249 @@
+
+@font-face {
+    font-family: "PT Sans Narrow Bold";
+    src: url("../fonts/ptsansnarrowbold.woff");
+}
+
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/ptsansnarrow.woff");
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    line-height: 36px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 940px;
+    padding: 0 10px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    background: #f6f3f0 url("../img/barbershop-index.png") 0 0 repeat;
+    min-width: 960px;
+}
+
+body.index {
+    background: #000000 url("../img/barbershop-index.jpg") no-repeat center top;
+    color: #ffffff;
+}
+
+
+/* header */
+
+
+.main-header {
+    min-height: 70px;
+    background-color: #000000;
+    margin-bottom: 53px;
+    color: #ffffff;
+}
+
+.logo {
+    width: 150px;
+    float: left;
+    text-align: center;
+    padding-top:25px;
+    padding-bottom:13px;
+}
+
+.logo img{
+    width:111px;
+    height:24px;
+}
+
+.main-navigation {
+    width: 630px;
+    float: left;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.main-navigation a{
+    padding: 25px 20px;
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 19px;
+}
+
+.main-navigation a:hover {
+    background: #242424;
+}
+
+
+
+.main-navigation .active {
+    position: relative;
+
+    background-color: transparent;
+}
+
+.main-navigation .active a:hover {
+    background: none;
+}
+
+.main-navigation .active::after {
+    content: "";
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+
+    height: 5px;
+
+    background-color: #ffffff;
+}
+
+.main-navigation .active span {
+    display: block;
+    padding: 25px 20px;
+}
+
+.user-block {
+   max-width: 140px;
+    float: right;
+}
+
+.login {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    position: relative;
+    padding: 25px 20px;
+    padding-left: 50px;
+    vertical-align: top;
+}
+
+.login:hover, .logo:hover{
+    background-color: #242424;
+}
+
+.login::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 20px;
+
+    width: 18px;
+    height: 18px;
+    background: transparent url("../img/sprite.png") no-repeat;
+    opacity: 0.3;
+    background-position: -5px -96px;
+}
+
+
+.login:hover::before {
+    opacity: 1;
+}
+
+
+
+
+/* index */
+
+.index-logo {
+    width: 368px;
+    height: 204px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+
+
+.index-logo img {
+    width: 368px;
+    height: 204px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.features-item:last-child {
+    margin-right: 0;
+}
+
+.features-name {
+    position: relative;
+
+    display: block;
+    margin-bottom: 30px;
+    padding-bottom: 35px;
+
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
+
+}
+
+.features-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+
+    background-color: #ffffff;
+    transform: rotate(45deg);
+}
+
+.index-content {
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    color: #000000;
+    background: url("../img/layer17copy.png") no-repeat center,
+    #f8f5f2 url("../img/barbershop-index.png");
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+}
+
+.index-content-left {
+    float: left;
+    width: 380px;
+}
+
+.index-content-right {
+    float: right;
+    width: 300px;
+
+}
+
+.index-content-title {
+    margin: 0;
+    margin-bottom: 25px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.index-content p {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.news-preview {
+    margin: 0;
+    padding: 0;
+    padding-right: 35px;
+
+    list-style: none;
+}
+
+.news-preview li {
+    margin-bottom: 25px;
+}
+
+.news-preview p {
+    margin-bottom: 0;
+}
+
+.news-preview time {
+    text-transform: none;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 33px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #663d15;
+}
+
+.btn.disabled,
+.btn:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.btn.disabled:hover,
+.btn:disabled:hover {
+    background-color: #000000;
+}
+
+.gallery {
+    position: relative;
+
+    height: 260px;
+}
+
+.gallery-content {
+    height: 164px;
+    margin: 0;
+
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+
+    width: 140px;
+    margin: 0;
+}
+
+.gallery-prev {
+    left: 0;
+}
+
+.gallery-next {
+    right: 0;
+}
+
+.appointment-form input {
+    float: left;
+    width: 106px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 7px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+}
+
+.appointment-form input:focus {
+    border: 2px solid #663d15;
+}
+
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+}
+
+/* shop */
+
+.features-item .features-name {
+    font-size: 30px;
+    line-height: 40px;
+    color: #f7f4f1;
+
+}
+
+.filter-items .index-content-title {
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+.content-title {
+  padding-top: 0;
+    padding-bottom: 50px;
+}
+
+
+.filter-items label {
+    padding-left: 40px;
+}
+
+.filter-items{
+    width: 220px;
+    float: left;
+}
+
+.catalog-right {
+    width: 700px;
+    float: right;
+}
+
+.filter-checkbox, .filter-radio {
+    padding-bottom: 15px;
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.filter-checkbox label:hover, .filter-radio label:hover{
+    color: #663d15;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"], input[type="radio"]{
+    display: none;
+}
+input[type="checkbox"] + label, input[type="radio"] + label{
+position: relative;
+
+}
+
+.filter-brands input[type="checkbox"] + label::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/sprite-checkbox.png") 0 0 no-repeat;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.filter-brands input[type="checkbox"]:checked+label::before {
+    background: url("../img/sprite-checkbox.png") 0 -20px no-repeat;
+}
+
+.filter-brands input[type="checkbox"]:disabled+label::before {
+    background: url("../img/sprite-checkbox.png") 0 -80px no-repeat;
+}
+
+.filter-brands input[type="checkbox"]:checked:disabled+label::before {
+    background: url("../img/sprite-checkbox.png") 0 -100px no-repeat;
+}
+
+input:disabled +label{
+    color: #aba9a7;
+
+}
+input:disabled +label:hover{
+    color: #aba9a7;
+    cursor: default;
+
+}
+
+
+.filter-group input[type="radio"]:checked + label::before{
+    background: url("../img/sprite-checkbox.png") 0 -60px no-repeat;
+}
+
+.filter-group input[type="radio"] + label::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url("../img/sprite-checkbox.png") 0 -40px no-repeat;
+}
+
+.filter-group input[type="radio"]:disabled + label::before{
+    background: url("../img/sprite-checkbox.png") 0 -120px no-repeat;
+    color: #aeacaa;
+}
+
+.filter-group input[type="radio"]:disabled:checked + label::before{
+    background: url("../img/sprite-checkbox.png") 0 -140px no-repeat;
+}
+
+
+.filter-group, .filter-brands{
+    margin-bottom: 30px;
+}
+
+
+
+.catalog {
+    font-size:0;
+    margin-bottom: 30px;
+}
+
+.catalog-item {
+    width: 220px;
+    min-height: 286px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 20px 20px 0;
+    box-shadow: 0 0 15px rgba(0,1,1,0.2);
+}
+
+.catalog-item:nth-child(3n){
+    margin-right:0 ;
+}
+
+.catalog-item:hover{
+    box-shadow: 0 0 25px rgba(0,1,1,0.3);
+}
+
+a.catalog-item-title{
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    text-align: left;
+}
+
+.catalog-item-title h3{
+    text-transform: none;
+    padding-left: 15px;
+}
+.catalog-item-title span{
+    text-transform: uppercase;
+}
+
+
+.catalog-item-buy{
+    padding-left: 15px;
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+
+    line-height: 24px;
+    padding-bottom: 15px;
+    font-size: 0;
+
+}
+
+span.price{
+padding: 10px 23px;
+    font-size: 14px;
+}
+
+
+
+.paginator a {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #000000;
+    width: 45px;
+    min-height: 25px;
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+.paginator a.active {
+    color: #000000;
+    background-color: #ffffff;
+    cursor: default;
+}
+
+.paginator a:hover:not(.active) {
+    background-color: #663d15;
+}
+
+.paginator li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    margin-right: 5px;
+}
+
+
+.breadcrumbs {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow Bold", sans-serif;
+    list-style: none;
+}
+
+.breadcrumbs li {
+    position: relative;
+
+    display: inline;
+    padding-right: 40px;
+}
+
+.breadcrumbs li::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 18px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs .current {
+    color: #aba9a7;
+}
+
+.breadcrumbs .current::after {
+    display: none;
+}
+
+/*  item */
+
+.item-description{
+    display: block;
+    float: right;
+    width: 390px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 20px;
+}
+.item-gallery {
+    float: left;
+    display: block;
+    margin-right: 70px;
+    width: 460px;
+
+}
+
+.item-gallery img{
+    box-shadow: 0 0 15px rgba(0,1,1,0.2);
+}
+
+.item-big-img{
+    margin-bottom: 10px;
+}
+.item-small-img li{
+    display: inline-block;
+    padding-right: 17px;
+    vertical-align: top;
+
+}
+
+.item-small-img li:last-child {
+    padding-right: 0;
+}
+
+.item-info{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.exist {
+    margin-right: 175px;
+}
+
+.article{
+    color: #aeaeae;
+}
+
+
+.item-set-small li{
+    padding-bottom: 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+
+.item-set-small li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.item-buy{
+margin-bottom: 70px;
+font-size: 0;
+}
+
+
+
+.price{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #e5e5e5;
+    color: #000000;
+    vertical-align: top;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+a.button {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 23px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    vertical-align: top;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a.button:hover,
+a.button:active {
+    background-color: #663d15;
+}
+
+a.button.disabled,
+a.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+}
+
+a.button.disabled:hover,
+a.button:disabled:hover {
+    background-color: #000000;
+}
+
+/*  prise-list*/
+
+
+
+.price-list-title {
+
+    margin-bottom: 65px;
+font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    text-align: center;
+}
+
+.price-list-title h2 {
+    position: relative;
+    z-index: 2;
+    display: inline;
+    margin: 0;
+    padding: 0 25px;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    background: #f8f3f0 url("../img/barbershop-index.png") repeat;
+}
+
+.price-list-title::after {
+    content: "";
+    position: relative;
+    top: -25px;
+    z-index: 1;
+    display: block;
+    border-bottom: 2px solid #000000;
+}
+
+.about-right {
+    float: right;
+    width: 460px;
+    margin-left: 100px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+.table{
+    border-collapse: collapse;
+    width: 460px;
+    text-align: left;
+    vertical-align: top;
+
+}
+
+table caption {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.table td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 10px 15px ;
+    width: 240px;
+}
+
+.item-set li{
+    padding-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+
+.item-set li::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+td.column-2{
+    text-align: center;
+}
+
+.about-left {
+    float:left;
+    width: 380px;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+section.about, .about-bottom {
+    display: inline-block;
+}
+
+.about.index-content-title, .about-bottom h2.index-content-title{
+    margin-bottom: 30px;
+}
+h2{
+    margin: 0;
+}
+
+
+/*  футер */
+
+.main-footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-top: 60px;
+    background: #252525 url("../img/barbershop-footer.png");
+    color: #ffffff;
+}
+.footer-contacts {
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover {
+    text-decoration: none;
+}
+
+.footer-social {
+    float: left;
+    width: 180px;
+    text-align: center;
+}
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+
+.social-btn{
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    background: #000000 url("../img/sprite.png") no-repeat center;
+    margin: 0 2px;
+    font-size: 0;
+    vertical-align: top;
+
+
+
+}
+
+.social-btn:hover {
+    background-color: #ffffff;
+}
+
+.social-btn-vk{
+    background-position: -1px -229px;
+}
+
+.social-btn-fb {
+
+    background-position: 5px -149px;
+}
+
+.social-btn-inst {
+
+    background-position: 1px -191px;
+}
+
+
+
+.social-btn-vk:hover {
+
+    background-position: 5px -260px;
+}
+
+.social-btn-fb:hover {
+
+    background-position: 10px -112px;
+}
+
+.social-btn-inst:hover {
+
+    background-position: 6px -55px;
+}
+
+.footer-copyright {
+    float: right;
+    max-width: 180px;}
+
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer-copyright .btn {
+    margin-right: 0;
+}
+
+.footer-copyright .btn:hover {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
+.sprite-Layer-29 {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-Shape-2-copy {
+    width: 8px;
+    height: 8px;
+    background-position: -10px -42px;
+}
+
+
+
+
+/* Всплывающая форма */
+
+@keyframes bounce {
+    0%   {
+        transform: translateY(-2000px);
+    }
+    70%  {
+        transform: translateY(30px);
+    }
+    90%  {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+
+
+.modal-content {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+display: none;
+
+    width: 300px;
+    margin-left: -230px;
+    padding: 50px 80px;
+
+    color: #000000;
+
+    background: #f8f3f0 url("img/pattern-white.jpg");
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-map {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+
+    width: 766px;
+    height: 561px;
+    margin-top: -280px;
+    margin-left: -390px;
+
+    background: #e9e5dc url("../img/map.jpg");
+    border: 7px solid white;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close {
+    position: absolute;
+    top: 0;
+    right: -34px;
+
+    width: 22px;
+    height: 22px;
+
+    font-size: 0;
+
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
+
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+
+.modal-content-close::before,
+.modal-content-close::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 2px;
+
+    width: 19px;
+    height: 3px;
+    background-color: #d0d0d0;
+    border-radius: 1px;
+}
+
+.modal-content-close::before {
+    transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+    transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+}
+
+.modal-content p {
+    margin: 0;
+margin-bottom: -20px;
+    font-family: "PT Sans Narrow Bold", "Arial", "sans-serif";
+}
+
+.modal-content .login-form {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 236px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    padding-right: 40px;
+
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f9f6f3;
+    border: 2px solid #000000;
+    outline: none;
+    position: relative;
+}
+
+.login-form input:focus {
+    border-color: #663d15;
+}
+
+input[type="password"] + label::after{
+    background: url("../img/user.png") no-repeat 0 0;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -105px;
+    left: 270px;
+}
+
+
+input[type="password"] + label::before{
+    background: url("../img/locked.png") 0 0 no-repeat;
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -45px;
+    left: 270px;
+}
+
+.login-form .restore {
+    float: right;
+text-decoration: underline;
+    color: #000000;
+}
+
+.login-form .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.login-checkbox {
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+
+.login-checkbox:hover {
+    color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -3px;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
+
